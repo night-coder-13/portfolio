@@ -3,6 +3,7 @@
     <HomeHeader />
     <HomeAbout />
     <HomeSkill />
+    <HomeContact />
   </NuxtLayout>
 
 </template>
