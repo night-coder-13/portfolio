@@ -17,13 +17,13 @@ const prop = defineProps({
 const button = ref(null);
 
 const scrollToTarget = () => {
-    console.log()
     gsap.to('#wapper-body', {
         duration: 1, // مدت زمان اسکرول (به ثانیه)
         scrollTo: '#'+prop.id , // موقعیت اسکرول هدف (به پیکسل)
         ease: 'power3.inOut', // انیمیشن اسکرول
     });
 };
+
 
 onMounted(() => {
     

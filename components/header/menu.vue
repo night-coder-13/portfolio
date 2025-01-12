@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="py-14">
         <div class="mt-8">
             <img id="avatar" src="../../assets/image/profile.png" class="w-2/4 m-auto" alt="">
         </div>

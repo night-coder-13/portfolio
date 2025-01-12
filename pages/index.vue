@@ -2,6 +2,7 @@
   <NuxtLayout>
     <HomeHeader />
     <HomeAbout />
+    <HomeSkill />
   </NuxtLayout>
 
 </template>
