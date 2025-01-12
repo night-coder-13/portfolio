@@ -54,7 +54,7 @@
 </template>
 
 <script setup>
-import '../assets/css/styleC.css'
+import '../assets/css/style-cart.css'
 </script>
 
 <style scoped>

@@ -53,6 +53,7 @@
     margin: auto;
     width: 175px;
     height: 100px;
+    z-index: 999;
   }
   
   .loader span {

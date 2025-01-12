@@ -1,8 +1,11 @@
-
 <template>
-  <HomeHeader />
+  <NuxtLayout>
+    <HomeHeader />
+    <HomeAbout />
+  </NuxtLayout>
+
 </template>
 
-<script setup >
+<script setup>
 
 </script>

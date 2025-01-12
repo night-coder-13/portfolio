@@ -1,7 +1,7 @@
 <template>
-        <div id="home" class="flex flex-col items-center justify-center h-[85vh] w-full relative">
+        <div id="about" class="flex flex-col items-center justify-center h-full w-full relative">
             <div class="text-center w-3/4">
-                <h1 class="text-5xl items-header">سلام ،من مهدی عباسیان هستم</h1>
+                <h1 class="text-5xl items-header">سلام ، عباسیان هستم</h1>
                 <p class="text-base mt-5 items-header">من متولد 1379 هستم و از کودکی به بازی های رایانه ای علاقه داشتم و
                     وارد
                     دنیای برنامه نویسی شدم و عاشق حل مسئله و چالش‌های پیش روی آن هستم.</p>

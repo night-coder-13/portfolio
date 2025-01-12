@@ -11,12 +11,14 @@
   },
   "devDependencies": {
     "@nuxt/ui": "^2.18.7",
-    "nuxt": "^3.10.0"
+    "nuxt": "^3.10.0",
+    "nuxt-particles": "^0.3.0"
   },
   "dependencies": {
     "@tweenjs/tween.js": "^25.0.0",
     "@vueuse/core": "^12.4.0",
     "gsap": "^3.12.5",
+    "particles.js": "^2.0.0",
     "three": "^0.172.0"
   }
 }

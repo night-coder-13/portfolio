@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div dir="rtl">
     <Loader v-if="!loader" />
     <NuxtPage v-else />
   </div>
