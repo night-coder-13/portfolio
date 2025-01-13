@@ -25,7 +25,6 @@ onMounted(() => {
 </script>
 <style>
 
-
 /* استایل نوار اسکرول برای Chrome و Safari */
 .scrollable-div::-webkit-scrollbar {
     width: 5px;

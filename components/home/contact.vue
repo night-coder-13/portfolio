@@ -90,49 +90,9 @@
 <script setup>
 import { gsap } from 'gsap';
 
-const iconScroll = ref()
 
 onMounted(() => {
-    // انیمیشن حلقه‌ای برای حرکت به سمت بالا و پایین
-    gsap.to(iconScroll.value, {
-        y: -10, // حرکت به سمت بالا
-        duration: 1, // مدت زمان انیمیشن
-        ease: "power1.inOut", // نوع انیمیشن
-        yoyo: true, // حرکت معکوس
-        repeat: -1 // تکرار بی‌نهایت
-    });
-
-    gsap.set('.list-menu-item', {
-        x: 100,
-        opacity: 0
-    })
-    gsap.to('.list-menu-item', {
-        x: 0, // به موقعیت اصلی برگردد
-        opacity: 1, // شفافیت به حالت عادی برگردد
-        duration: 0.5, // مدت زمان انیمیشن
-        stagger: 0.2, // فاصله بین انیمیشن هر آیتم
-        delay: 0.2
-    })
-    gsap.set('#avatar', {
-        x: 100,
-        opacity: 0
-    })
-    gsap.to('#avatar', {
-        x: 0, // به موقعیت اصلی برگردد
-        opacity: 1, // شفافیت به حالت عادی برگردد
-        duration: 0.5, // مدت زمان انیمیشن
-    })
-    gsap.set('.items-header', {
-        y: 50,
-        opacity: 0
-    })
-    gsap.to('.items-header', {
-        y: 0, // به موقعیت اصلی برگردد
-        opacity: 1, // شفافیت به حالت عادی برگردد
-        duration: 0.7, // مدت زمان انیمیشن
-        stagger: 0.3, // فاصله بین انیمیشن هر آیتم
-
-    })
+   
 
 });
 </script>
