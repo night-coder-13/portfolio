@@ -1,5 +1,5 @@
 <template>
-    <div id="contact" class="flex flex-col items-center justify-center h-[100vh] w-full relative py-8 mt-3 z-50">
+    <div id="contact" class="flex flex-col items-center justify-center h-[100vh] w-full relative py-8 mt-3 z-30">
         <div class="relative">
             <h3 class="text-4xl">تماس با من</h3>
             <div class="w-full">
@@ -13,12 +13,12 @@
                     <p class="text-sm sm:text-base mt-2 mr-1 text-gray-400">اطلاعات خودرا در این قسمت وارد کنید در کم ترین زمان
                         ممکن با شما تماس خواهم گرفت.</p>
                     <form action="" class="m-4 ml-8 mr-1">
-                        <UInput color="white" variant="outline" class="p-2" placeholder="نام و نام‌خانوادگی" />
-                        <UInput color="white" variant="outline" class="p-2" placeholder="شماره تماس" />
-                        <UInput color="white" variant="outline" class="p-2" placeholder="موضوع درخواست" />
-                        <UTextarea color="white" variant="outline" class="p-2" placeholder="توضیحات" />
-                        <UButton color="gray" variant="solid" size="sm"
-                            class="mt-4 mr-6 border-2 hover:border-gray-700 border-green-500">ثبت درخواست</UButton>
+                        <UInput color="white" variant="outline" style="background: none;" class="p-2 bg-transparent dark:bg-transparent" placeholder="نام و نام‌خانوادگی"  />
+                        <UInput color="white" variant="outline" style="background: none;" class="p-2 bg-transparent dark:bg-transparent" placeholder="شماره تماس"  />
+                        <UInput color="white" variant="outline" style="background: none;" class="p-2 bg-transparent dark:bg-transparent" placeholder="موضوع درخواست"  />
+                        <UTextarea color="white" variant="outline" style="background: none;" class="p-2 bg-transparent dark:bg-transparent" placeholder="توضیحات"  />
+                        <UButton color="gray" variant="solid" size="sm"  style="background: none;"
+                            class="mt-4 mr-6 border-2 hover:border-gray-700 border-green-500 text-white">ثبت درخواست</UButton>
                     </form>
                 </div>
                 <div class="w-full md:w-2/4 grid h-full content-center gap-2 justify-items-center pb-8">
@@ -96,3 +96,8 @@ onMounted(() => {
 
 });
 </script>
+<style >
+.bg-transparent{
+    background: none !important;
+}
+</style>

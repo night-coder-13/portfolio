@@ -1,7 +1,7 @@
 <template>
     <div class="button-container" >
-        <button class="wave-button text-xs text-white bg-green">مشاهده</button>
-        <div class="wave" ref="wave1"></div>
+        <button ref="wave1" class="wave-button text-xs text-white bg-green">مشاهده</button>
+        <div class="wave"></div>
         <div class="wave" ref="wave2"></div>
     </div>
 </template>
@@ -16,9 +16,9 @@ export default {
     methods: {
         startAnimation() {
             gsap.to(this.$refs.wave1, {
-                scale: 1.2,
-                opacity: 0.7,
-                duration: 1,
+                scale: 1.15,
+                // opacity: 0.7,
+                duration: .7,
                 ease: "power2.out",
                 repeat: -1,
                 yoyo: true,

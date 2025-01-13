@@ -1,7 +1,7 @@
 <template>
     <NuxtLoadingIndicator color="linear-gradient(225deg, #5e0a1f, #d22c4e)" />
     <div class="flex h-[95vh] p-2 sm:p-4">
-        <div>
+        <div class=" lg:hidden block z-40">
             <button id="btn-mobile-menu" class="fixed top-4 right-6 bg-green text-blue p-2 rounded-md z-20 text-center"
                 @click="toggel">
                 <svg id="svg-mobile-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"

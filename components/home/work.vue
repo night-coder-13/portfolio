@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col items-center justify-center h-auto w-full relative py-8 mt-10 z-50">
+    <div class="flex flex-col items-center justify-center h-auto w-full relative py-8 mt-10 z-30">
         <div class="relative" id="work">
             <h3 class="text-4xl">نمونه کار های من</h3>
             <div class="w-full">
@@ -8,7 +8,7 @@
         </div>
         <div class="w-full pt-10 p-8">
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-8 my-10 gap-5">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-8 my-10 gap-5">
                 <WorkBox title="کانسپت از دیجی‌کالا" :link="'https://nuxt-digi-liara.run'" :thumbnail="'https://codemars.ir/image/digikala-thumb.jpg'" :img="'https://codemars.ir/image/digikala.jpg'" />
                 <WorkBox title="کانسپت از فروشگاه صباح" :link="'https://laravel-fapp-liara.run'" :thumbnail="'https://codemars.ir/image/sabah-thumb.jpg'" :img="'https://codemars.ir/image/sabah.jpg'" />
                 
