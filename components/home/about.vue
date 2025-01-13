@@ -1,9 +1,9 @@
 <template>
-    <div id="about" class="flex flex-col items-center justify-center h-full w-full relative py-8 mt-3">
+    <div id="about" class="flex flex-col items-center justify-center h-[100vh] w-full relative py-8 mt-3">
         <div class="relative">
             <h3 class="text-4xl">درباره من</h3>
             <div class="w-full">
-                <h3 class="text-5xl text-green opacity-30 absolute top-5 -left-12 w-48 -z-10">ABOUT ME</h3>
+                <h3 class="text-5xl text-green opacity-60 absolute top-5 -left-12 w-48 -z-10 en-title">ABOUT ME</h3>
             </div>
         </div>
         <div class="w-full pt-10 p-8">
