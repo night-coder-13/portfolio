@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col items-center justify-center h-[100vh] w-full relative py-8 mt-10 z-50">
+    <div class="flex flex-col items-center justify-center h-auto w-full relative py-8 mt-10 z-50">
         <div class="relative" id="work">
             <h3 class="text-4xl">نمونه کار های من</h3>
             <div class="w-full">
@@ -8,7 +8,7 @@
         </div>
         <div class="w-full pt-10 p-8">
             
-            <div class="grid grid-cols-4 p-8 my-10 gap-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-8 my-10 gap-5">
                 <div class="box p-3 relative mb-4">
                     <img src="../../assets/image/project/p1.jpg" class="w-full rounded-md" alt="">
                     <div class="text-center absolute -bottom-6 left-0 w-full flex justify-center">

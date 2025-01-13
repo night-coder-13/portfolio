@@ -26,7 +26,7 @@
     </div>
 </template>
 <script setup>
-const activeIndex = ref(0)
+const activeIndex = useState('activeIndex' , ()=> 0)
 const items = ref([
     { title: 'خانه' , id : 'home' },
     { title: 'درباره من' , id : 'about' },

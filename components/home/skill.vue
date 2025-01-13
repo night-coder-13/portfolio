@@ -1,5 +1,5 @@
 <template>
-    <div id="skill" class="flex flex-col items-center justify-center h-[125vh] w-full relative py-8 mt-3">
+    <div id="skill" class="flex flex-col items-center justify-center h-auto w-full relative py-8 mt-3">
         <div class="relative">
             <h3 class="text-4xl">مهارت های من</h3>
             <div class="w-full">

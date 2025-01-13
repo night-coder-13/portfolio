@@ -1,5 +1,5 @@
 <template>
-    <div id="about" class="flex flex-col items-center justify-center h-[100vh] w-full relative py-8 mt-3">
+    <div id="about" class="flex flex-col items-center justify-center h-auto w-full relative py-8 mt-3">
         <div class="relative">
             <h3 class="text-4xl">درباره من</h3>
             <div class="w-full">
