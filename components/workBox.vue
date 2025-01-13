@@ -1,6 +1,6 @@
 <template>
-    <div class="box p-3 relative mb-4">
-        <img :src="`../asset/image/progect/${prop.thumbnail}`" class="w-full rounded-md" alt="">
+    <div class="box p-3 relative mb-4 rounded-2xl">
+        <img :src="prop.thumbnail" class="w-full rounded-lg" alt="">
         <div class="text-center absolute -bottom-6 left-0 w-full flex justify-center">
             <WaveButton class="opacity-80 hover:opacity-95" @click="isOpen = true" />
         </div>
@@ -20,7 +20,7 @@
                         <h3 class="text-sm sm:text-base Iran-yekan font-semibold text-gray-900 dark:text-white">
                             {{ prop.title }}
                         </h3>
-                        <button
+                        <a :href="prop.link"
                             class="text-green text-sm sm:text-base Iran-yekan underline underline-offset-2 flex mx-2">
                             <span class="mx-1">مشاهده آنلاین</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -34,7 +34,7 @@
                                 <path d="M20 21l2 -2l-2 -2" />
                                 <path d="M17 17l-2 2l2 2" />
                             </svg>
-                        </button>
+                        </a>
                     </div>
                     <UButton color="gray" variant="ghost" icon="i-heroicons-x-mark-20-solid" class="-my-1"
                         @click="isOpen = false" />
@@ -44,19 +44,14 @@
             <Placeholder class="h-full" />
             <div class="overscroll-auto overflow-auto scrollable-div ">
                 <div>
-                    <img src="../assets/image/project/sabah.jpg" class="m-auto max-h-[500px] rounded-lg" alt="">
+                    <img :src="prop.img" class="m-auto max-h-[500px] rounded-lg" alt="">
                 </div>
                 <!-- <UCarousel v-slot="{ item }" :items="prop.items" :ui="{ item: 'basis-full' }"
                     class="rounded-lg overflow-hidden w-10/12 m-auto mt-8" arrows>
                     <img :src="item" class="m-auto max-h-[500px] rounded-lg" draggable="false">
                 </UCarousel> -->
                 <div class="w-10/12 m-auto p-4 mt-8">
-                    <p>یک صفحه نمونه کار خوب به زبان انگلیسی باید شامل موارد زیر باشد:
-
-                        عنوان واضح و مختصر: به طور مثال: "Portfolio of [نام شما]" یا "Design Portfolio"
-                        معرفی مختصر: یک پاراگراف کوتاه در مورد خودتان، تخصص‌ها و آنچه که می‌خواهید به نمایش بگذارید.
-                        نمونه کارها: تصاویر با کیفیت بالا از کارهایتان همراه با توضیحات کوتاه به زبان انگلیسی.
-                        بخش تماس با من: شامل آدرس ایمیل، شماره تلفن و لینک به پروفایل‌هایتان در شبکه‌های اجتماعی.</p>
+                    <div v-html="prop.desc"></div>
                 </div>
             </div>
         </UCard>
@@ -68,10 +63,10 @@ const { public: { BaseUrl } } = useRuntimeConfig()
 const isOpen = ref(false)
 const prop = defineProps({
     title: {},
+    link: {},
     thumbnail: {},
-    items: {
-
-    }
+    img: {},
+    desc : {}
 })
 const getImagePath = (item) => {
   return require(`~/assets/image/project/${item}`);

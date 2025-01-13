@@ -14,11 +14,8 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxt/ui", "nuxt-particles", "@nuxt/image"],
-  image: {
-    provider: 'vercel', // یا 'cloudinary', 'imgix' ...  بسته به provider ای که استفاده می کنید
-    // ... سایر پیکربندی ها
-  },
+  modules: ["@nuxt/ui", "nuxt-particles"],
+ 
   colorMode: {
     preference: "light",
   },

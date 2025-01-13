@@ -9,26 +9,11 @@
         <div class="w-full pt-10 p-8">
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-8 my-10 gap-5">
-                <WorkBox title="کانسپت از دیجی‌کالا" :thumbnail="'p1.jpg'" :items="[
-                    '../assets/image/project/p1.jpg',
-                    '../assets/image/project/p2.jpg',
-                ]" />
-                <div class="box p-32 ">
-
-                </div>
-                <div class="box p-32 ">
-
-                </div>
-                <div class="box p-32 ">
-
-                </div>
-                <div class="box p-32 ">
-
-                </div>
-                <div class="box p-32 ">
-
-                </div>
-                <div class="box p-32 ">
+                <WorkBox title="کانسپت از دیجی‌کالا" :link="'https://nuxt-digi-liara.run'" :thumbnail="'https://codemars.ir/image/digikala-thumb.jpg'" :img="'https://codemars.ir/image/digikala.jpg'" />
+                <WorkBox title="کانسپت از فروشگاه صباح" :link="'https://laravel-fapp-liara.run'" :thumbnail="'https://codemars.ir/image/sabah-thumb.jpg'" :img="'https://codemars.ir/image/sabah.jpg'" />
+                
+                
+                <div class="box p-32 rounded-2xl">
 
                 </div>
             </div>
@@ -46,10 +31,8 @@ onMounted(() => {
 
 <style>
 .box {
-
     background: #070E1B;
     background: radial-gradient(at left bottom, #05ca7e6a 0%, #070E1B 60%);
     border: 1px solid #0baa6d;
-    border-radius: 20px;
 }
 </style>
