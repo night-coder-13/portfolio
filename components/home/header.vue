@@ -1,18 +1,17 @@
 <template>
     <div id="home" class="flex flex-col items-center justify-center h-[85vh] w-full relative">
-        <div class="text-center w-3/4">
-            <h1 class="text-5xl items-header">سلام ،من مهدی عباسیان هستم</h1>
-            <p class="text-base mt-5 items-header">من متولد 1379 هستم و از کودکی به بازی های رایانه ای علاقه داشتم و
+        <div class="text-center w-full md:w-3/4">
+            <h1 class="text-3xl sm:text-5xl items-header">سلام ،من مهدی عباسیان هستم</h1>
+            <p class="text-sm sm:text-base mt-5 items-header">من متولد 1379 هستم و از کودکی به بازی های رایانه ای علاقه داشتم و
                 وارد
                 دنیای برنامه نویسی شدم و عاشق حل مسئله و چالش‌های پیش روی آن هستم.</p>
-            <!-- <Typewriter text="من متولد 1379 هستم و از کودکی به بازی های رایانه ای علاقه داشتم و وارد دنیای برنامه نویسی شدم و عاشق حل مسئله و چالش‌های پیش روی آن هستم." :typingSpeed="100" /> -->
         </div>
-        <div class="flex gap-4 w-5/12 mt-8 items-header">
+        <div class="flex gap-3 sm:gap-4 w-full sm:w-8/12 md:w-6/12 lg:w-5/12 mt-8 items-header">
             <ScrollButton
-                :class="'duration-300 btn border-[#04c97f] border bg-[#04c97f] text-[#070d1b] hover:bg-[#070d1b] hover:text-[#04c97f] py-3 px-4 rounded-lg w-2/4 z-20 font-bold'"
+                :class="'text-sm sm:text-base duration-300 btn border-[#04c97f] border bg-[#04c97f] text-[#070d1b] hover:bg-[#070d1b] hover:text-[#04c97f] py-3 px-4 rounded-lg w-2/4 z-20 font-bold'"
                 :title="'دانلود رزومه'" />
             <ScrollButton
-                :class="'duration-300 btn border-2 border-[#04c97f] text-[#04c97f] hover:bg-[#04c97f] hover:text-[#070d1b] py-3 px-4 rounded-lg w-2/4 z-20 font-bold'"
+                :class="'text-sm sm:text-base duration-300 btn border-2 border-[#04c97f] text-[#04c97f] hover:bg-[#04c97f] hover:text-[#070d1b] py-3 px-4 rounded-lg w-2/4 z-20 font-bold'"
                 :title="'نمونه کار های من'" :id="'work'" />
         </div>
         <div @click="scrollDown()" class="absolute bottom-0 text-green grid justify-items-center cursor-pointer">
@@ -54,26 +53,6 @@ onMounted(() => {
         repeat: -1 // تکرار بی‌نهایت
     });
 
-    gsap.set('.list-menu-item', {
-        x: 100,
-        opacity: 0
-    })
-    gsap.to('.list-menu-item', {
-        x: 0, // به موقعیت اصلی برگردد
-        opacity: 1, // شفافیت به حالت عادی برگردد
-        duration: 0.5, // مدت زمان انیمیشن
-        stagger: 0.2, // فاصله بین انیمیشن هر آیتم
-        delay: 0.2
-    })
-    gsap.set('#avatar', {
-        x: 100,
-        opacity: 0
-    })
-    gsap.to('#avatar', {
-        x: 0, // به موقعیت اصلی برگردد
-        opacity: 1, // شفافیت به حالت عادی برگردد
-        duration: 0.5, // مدت زمان انیمیشن
-    })
     gsap.set('.items-header', {
         y: 50,
         opacity: 0

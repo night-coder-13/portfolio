@@ -6,10 +6,10 @@
                 <h3 class="text-5xl text-green opacity-60 absolute top-5 -left-12 w-48 -z-10 en-title">ABOUT ME</h3>
             </div>
         </div>
-        <div class="w-full pt-10 p-8">
-            <h3 class="text-3xl text-gray-100">برنامه نویس و توسعه دهنده فول‌استک</h3>
+        <div class="w-full pt-10 md:p-8">
+            <h3 class="text-2xl sm:text-3xl text-gray-100">برنامه نویس و توسعه دهنده فول‌استک</h3>
             <h4 class="text-2xl text-green">Full-stack developer</h4>
-            <p class="text-base text-gray-300 font-bold mt-3 mr-4 leading-7">
+            <p class="text-sm sm:text-base text-gray-300 font-bold mt-3 mr-4 leading-7">
                 سلام مهدی هستم ،برنامه نویس و طراح وبسایت با تجربه در زمینه <span class="text-green mx-1">PHP</span> و
                 <span class="text-green mx-1">JAVASCRIPT</span> و
                 همچنین با مجموعه ای از ابزار ها و فریمورک ها مثل <span class="text-green mx-1">NUXT.JS , LARAVEL ,
@@ -24,7 +24,7 @@
                 من، به تکنولوژی‌های جدید علاقه دارم و می‌خواهم توی دنیای برنامه‌نویسی جایی
                 داشته باشم که به من این امکان رو بده که خلاقیت‌م رو به نمایش بذارم.
             </p>
-            <ul class="mt-4 mr-4 text-gray-400 ">
+            <ul class="mt-4 mr-4 text-gray-400 text-sm sm:text-base">
                 <li class="flex mt-2">
                     <span class="w-28 block">نظام وظیفه</span> :
                     <span class="mx-2 font-bold">کارت پایان خدمت</span>

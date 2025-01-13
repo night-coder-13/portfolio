@@ -1,5 +1,5 @@
 <template>
-    <div class="py-14">
+    <div class="py-14 ">
         <div class="mt-8">
             <img id="avatar" src="../../assets/image/profile.png" class="w-2/4 m-auto" alt="">
         </div>
@@ -22,6 +22,34 @@ const items = ref([
     { title: 'نمونه کار ها' , id : 'work' },
     { title: 'تماس بامن' , id : 'contact' },
 ])
+import { gsap } from 'gsap';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+gsap.registerPlugin(ScrollToPlugin);
+
+onMounted(() => {
+    
+    gsap.set('.list-menu-item', {
+        x: 100,
+        opacity: 0
+    })
+    gsap.to('.list-menu-item', {
+        x: 0, // به موقعیت اصلی برگردد
+        opacity: 1, // شفافیت به حالت عادی برگردد
+        duration: 0.5, // مدت زمان انیمیشن
+        stagger: 0.2, // فاصله بین انیمیشن هر آیتم
+        delay: 0.2
+    })
+    gsap.set('#avatar', {
+        x: 100,
+        opacity: 0
+    })
+    gsap.to('#avatar', {
+        x: 0, // به موقعیت اصلی برگردد
+        opacity: 1, // شفافیت به حالت عادی برگردد
+        duration: 0.5, // مدت زمان انیمیشن
+    })
+
+});
 </script>
 <style scoped>
 ul {

@@ -6,11 +6,11 @@
                 <h3 class="text-5xl text-green opacity-60 absolute top-5 -left-10 w-48 -z-10 en-title">Contact me</h3>
             </div>
         </div>
-        <div class="w-full pt-10 p-8">
-            <div class="flex py-8 px-4">
-                <div class="w-2/4 p-4">
+        <div class="w-full pt-10 p-2 sm:p-8">
+            <div class="flex flex-col md:flex-row py-8 md:px-4">
+                <div class="w-full md:w-2/4 p-4">
                     <h5 class="text-2xl">فرم تماس با من</h5>
-                    <p class="text-base mt-2 mr-1 text-gray-400">اطلاعات خودرا در این قسمت وارد کنید در کم ترین زمان
+                    <p class="text-sm sm:text-base mt-2 mr-1 text-gray-400">اطلاعات خودرا در این قسمت وارد کنید در کم ترین زمان
                         ممکن با شما تماس خواهم گرفت.</p>
                     <form action="" class="m-4 ml-8 mr-1">
                         <UInput color="white" variant="outline" class="p-2" placeholder="نام و نام‌خانوادگی" />
@@ -21,9 +21,9 @@
                             class="mt-4 mr-6 border-2 hover:border-gray-700 border-green-500">ثبت درخواست</UButton>
                     </form>
                 </div>
-                <div class="w-2/4 grid h-full content-center gap-2 justify-items-center">
-                    <h5 class="text-center text-2xl my-4 text-gray-200 mt-28">در شبکه های مجازی با من درارتباط باشد</h5>
-                    <ul class="text-center grid grid-cols-4 w-2/4 m-auto content-center gap-3 justify-items-center">
+                <div class="w-full md:w-2/4 grid h-full content-center gap-2 justify-items-center pb-8">
+                    <h5 class="text-center text-2xl my-4 text-gray-200 mt-4 sm:mt-28">در شبکه های مجازی با من درارتباط باشد</h5>
+                    <ul class="text-center grid grid-cols-4 w-3/4 sm:w-2/4 m-auto content-center gap-3 justify-items-center">
                         <li class="text-gray-300 hover:text-emerald-400 cursor-pointer">
                             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"

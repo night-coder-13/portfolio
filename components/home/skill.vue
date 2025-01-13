@@ -6,9 +6,9 @@
                 <h3 class="text-5xl text-green opacity-60 absolute top-5 -left-10 w-48 -z-10 en-title">My skills</h3>
             </div>
         </div>
-        <div class="w-full pt-10 p-8 mb-8">
-            <h3 class="text-3xl text-gray-100 my-3">مجموعه‌ای از مهارت‌ها برای هر چالشی !</h3>
-            <div class="px-8 py-4 mt-2">
+        <div class="w-full pt-10 sm:p-8 mb-8">
+            <h3 class="text-2xl sm:text-3xl text-gray-100 my-3">مجموعه‌ای از مهارت‌ها برای هر چالشی !</h3>
+            <div class="px-2 sm:px-8 py-4 mt-2">
                 <h3 class="text-xl text-gray-100 mb-8 flex items-center">
                     <span class="text-green mx-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
