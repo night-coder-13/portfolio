@@ -13,7 +13,7 @@
                 :title="'دانلود رزومه'" />
             <ScrollButton
                 :class="'duration-300 btn border-2 border-[#04c97f] text-[#04c97f] hover:bg-[#04c97f] hover:text-[#070d1b] py-3 px-4 rounded-lg w-2/4 z-20 font-bold'"
-                :title="'نمونه کار های من'" :id="'#work'" />
+                :title="'نمونه کار های من'" :id="'work'" />
         </div>
         <div @click="scrollDown()" class="absolute bottom-0 text-green grid justify-items-center cursor-pointer">
             <Typewriter class="text-sm " text="با من بیشتر آشنا شو" />

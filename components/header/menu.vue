@@ -4,18 +4,6 @@
             <img id="avatar" src="../../assets/image/profile.png" class="w-2/4 m-auto" alt="">
         </div>
         <div>
-            <!-- <ul class="overflow-hidden">
-                <li class="list-menu-item active">
-                    <ScrollButton :class="'btn btn-success'" :id="'#hi'" :title="'hi fucker'" />
-                </li>
-                <li class="list-menu-item">
-                    <ScrollButton :class="'btn btn-success'" :id="'#hi'" :title="'hi fucker'" />
-                </li>
-                <li class="list-menu-item">
-                    <ScrollButton :class="'btn btn-success'" :id="'#hi'" :title="'hi fucker'" />
-                </li>
-
-            </ul> -->
             <ul class="overflow-hidden">
                 <li v-for="(item, index) in items" :key="index"
                     :class="['list-menu-item', { active: activeIndex === index }]" @click="activeIndex = index">

@@ -7,14 +7,12 @@
             </div>
         </div>
         <div class="w-full pt-10 p-8">
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-8 my-10 gap-5">
-                <div class="box p-3 relative mb-4">
-                    <img src="../../assets/image/project/p1.jpg" class="w-full rounded-md" alt="">
-                    <div class="text-center absolute -bottom-6 left-0 w-full flex justify-center">
-                        <WaveButton class="opacity-80 hover:opacity-95" />
-                    </div>
-                </div>
+                <WorkBox title="کانسپت از دیجی‌کالا" :thumbnail="'p1.jpg'" :items="[
+                    '../assets/image/project/p1.jpg',
+                    '../assets/image/project/p2.jpg',
+                ]" />
                 <div class="box p-32 ">
 
                 </div>

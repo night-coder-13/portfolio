@@ -5,7 +5,7 @@
             <HeaderMenu />
             <span class="bg-[#04c97f] block h-[0vh] w-[5px] m-auto" ref="lineMenu"></span>
         </div>
-        <div id="wapper-body" class="w-10/12 p-4 overscroll-auto	overflow-auto scrollable-div">
+        <div id="wapper-body" class="w-10/12 p-4 overscroll-auto overflow-auto scrollable-div">
             <slot></slot>
         </div>
         <Particles class="z-10" />

@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxt/image": "^1.9.0",
     "@nuxt/ui": "^2.18.7",
     "nuxt": "^3.10.0",
     "nuxt-particles": "^0.3.0"
