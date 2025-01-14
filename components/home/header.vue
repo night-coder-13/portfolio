@@ -2,14 +2,16 @@
     <div id="home" class="flex flex-col items-center justify-center h-[85vh] w-full relative">
         <div class="text-center w-full md:w-3/4">
             <h1 class="text-3xl sm:text-5xl items-header">سلام ،من مهدی عباسیان هستم</h1>
-            <p class="text-sm sm:text-base mt-5 items-header">من متولد 1379 هستم و از کودکی به بازی های رایانه ای علاقه داشتم و
+            <p class="text-sm sm:text-base mt-5 items-header">من متولد 1379 هستم و از کودکی به بازی های رایانه ای علاقه
+                داشتم و
                 وارد
                 دنیای برنامه نویسی شدم و عاشق حل مسئله و چالش‌های پیش روی آن هستم.</p>
         </div>
         <div class="flex gap-3 sm:gap-4 w-full sm:w-8/12 md:w-6/12 lg:w-5/12 mt-8 items-header">
-            <ScrollButton
-                :class="'text-sm sm:text-base duration-300 btn border-[#04c97f] border bg-[#04c97f] text-[#070d1b] hover:bg-[#070d1b] hover:text-[#04c97f] py-3 px-4 rounded-lg w-2/4 z-20 font-bold'"
-                :title="'دانلود رزومه'" />
+            <a href="https://codemars.ir/mehdiAbasian.pdf" download
+            :class="'text-sm sm:text-base text-center duration-300 btn border-[#04c97f] border bg-[#04c97f] text-[#070d1b] hover:bg-[#070d1b] hover:text-[#04c97f] py-3 px-4 rounded-lg w-2/4 z-20 font-bold'"
+                >دانلود رزومه
+            </a>
             <ScrollButton
                 :class="'text-sm sm:text-base duration-300 btn border-2 border-[#04c97f] text-[#04c97f] hover:bg-[#04c97f] hover:text-[#070d1b] py-3 px-4 rounded-lg w-2/4 z-20 font-bold'"
                 :title="'نمونه کار های من'" :id="'work'" />

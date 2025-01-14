@@ -14,7 +14,7 @@ export default {
         },
         typingSpeed: {
             type: Number,
-            default: 100 // سرعت تایپ به میلی‌ثانیه
+            default: 120 // سرعت تایپ به میلی‌ثانیه
         }
     },
     data() {

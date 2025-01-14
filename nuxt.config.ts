@@ -11,6 +11,10 @@ export default defineNuxtConfig({
 
   app: {
     head: {
+      title : 'Mehdi - Personal Portfolio | مهدی عباسیان',
+      meta: [
+        { name: 'description', content: 'سلام مهدی هستم ،برنامه نویس و طراح وبسایت | اصفهان ایران' },
+      ],
     },
   },
 

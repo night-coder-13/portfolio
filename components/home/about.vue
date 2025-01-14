@@ -43,7 +43,7 @@
                 </li>
             </ul>
             <div>
-                <button class="m-5 text-green text-lg Iran-yekan underline underline-offset-2 flex">
+                <a class="m-5 text-green text-lg Iran-yekan underline underline-offset-2 flex" href="https://codemars.ir/mehdiAbasian.pdf" download>
                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="icon icon-tabler icons-tabler-outline icon-tabler-download">
@@ -53,7 +53,7 @@
                         <path d="M12 4l0 12" />
                     </svg>
                     <span class="mx-2">دانلود رزومه</span>
-                </button>
+                </a>
             </div>
         </div>
     </div>

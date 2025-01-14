@@ -9,8 +9,9 @@
         <div class="w-full pt-10 p-8">
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-8 my-10 gap-5">
-                <WorkBox title="کانسپت از دیجی‌کالا" :link="'https://nuxt-digi-liara.run'" :thumbnail="'https://codemars.ir/image/digikala-thumb.jpg'" :img="'https://codemars.ir/image/digikala.jpg'" />
-                <WorkBox title="کانسپت از فروشگاه صباح" :link="'https://laravel-fapp-liara.run'" :thumbnail="'https://codemars.ir/image/sabah-thumb.jpg'" :img="'https://codemars.ir/image/sabah.jpg'" />
+                <WorkBox title="کانسپت از دیجی‌کالا" :link="'https://nuxt-digi.liara.run'" :thumbnail="'https://codemars.ir/image/digikala-thumb.jpg'" :img="'https://codemars.ir/image/digikala.jpg'" />
+                <WorkBox title="از فروشگاه صباح" :link="'https://laravel-fapp.liara.run'" :thumbnail="'https://codemars.ir/image/sabah-thumb.jpg'" :img="'https://codemars.ir/image/sabah.jpg'" />
+                <WorkBox title="پیاده سازی وب‌سایت AFAM Build" :link="'https://afambuild.com'" :thumbnail="'https://codemars.ir/image/afam-thumb.jpg'" :img="'https://codemars.ir/image/afam.jpg'" />
                 
                 
                 <div class="box p-32 rounded-2xl">

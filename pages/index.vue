@@ -19,6 +19,11 @@
 </template>
 
 <script setup>
+definePageMeta({
+  title: 'Mehdi - Personal Portfolio | مهدی عباسیان',
+  name: 'Home',
+
+})
 const activeIndex = useState('activeIndex');
 
 const handleVisibility = (section) => (isVisible) => {
