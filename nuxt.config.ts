@@ -18,12 +18,12 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxt/ui", "nuxt-particles"],
+  modules: ["@nuxt/ui", "nuxt-particles", "@nuxtjs/tailwindcss"],
  
   colorMode: {
     preference: "light",
   },
 
-  css:['~/assets/css/min.css'],
+  css:['~/assets/css/min.css','~/assets/fontawesome/css/all.min.css'],
   compatibilityDate: "2025-01-13"
 });

@@ -15,13 +15,13 @@
             }
         }">
             <template #header>
-                
+
                 <div class="flex items-center justify-between">
                     <div class="flex">
                         <h3 class="text-sm sm:text-base Iran-yekan font-semibold text-gray-900 dark:text-white">
                             {{ prop.title }}
                         </h3>
-                        <a :href="prop.link" target="_blank"
+                        <a v-if="prop.link" :href="prop.link" target="_blank"
                             class="text-green text-sm sm:text-base Iran-yekan underline underline-offset-2 flex mx-2">
                             <span class="mx-1">مشاهده آنلاین</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"

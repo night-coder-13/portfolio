@@ -84,8 +84,7 @@
             </div>
         </div>
         <hr class="w-full">
-        <p class="text-center Iran-yekan text-sm">{ بهترین سرمایه انسان، دانش اوست }</p>
-        <br><br>
+        <p class="text-center Iran-yekan text-sm my-2">{ بهترین سرمایه انسان، دانش اوست }</p>
     </div>
 </template>
 <script setup>

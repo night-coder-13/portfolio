@@ -9,6 +9,9 @@
                     :class="['list-menu-item', { active: activeIndex === index }]" @click="activeIndex = index">
                     <ScrollButton :class="'btn btn-success'" :id="item.id" :title="item.title" />
                 </li>
+                <li id="sas">
+                    <NuxtLink to="/sas" class="list-menu-item">خدمات و پشتیبانی</NuxtLink>
+                </li>
             </ul>
         </div>
     </div>
@@ -63,5 +66,15 @@ li {
 
 li.active {
     color: #04c97f;
+}
+#sas {
+    margin-top: 5px;
+}
+#sas a {
+    padding-top: 5px;
+    border-top: 1px solid #0add8c;
+}
+#sas a:hover {
+    color: #0add8c;
 }
 </style>

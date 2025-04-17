@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@nuxt/ui": "^2.18.7",
+    "@nuxtjs/tailwindcss": "^6.13.2",
     "nuxt": "^3.10.0",
     "nuxt-particles": "^0.3.0"
   },
