@@ -36,7 +36,7 @@ const d = computed(() =>
       fill="none"
       stroke="#959595"
       stroke-linecap="round"
-      stroke-width="2"
+      stroke-width="1.5"
     />
   </svg>
 </template>
