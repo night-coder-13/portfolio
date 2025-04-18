@@ -1,0 +1,10 @@
+.vpd-day{
+    /* background-color: #6798fb;
+    border-radius: 50%; */
+}
+.vpd-day-text{
+    color: #333;
+}
+.vpd-selected .vpd-day-text{
+    color: #fff;
+}

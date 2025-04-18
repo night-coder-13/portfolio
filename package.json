@@ -19,6 +19,10 @@
   "dependencies": {
     "@vueuse/core": "^12.4.0",
     "gsap": "^3.12.5",
-    "vue-observe-visibility": "^1.0.0"
+    "jalaali-js": "^1.2.8",
+    "sass": "^1.86.3",
+    "sass-loader": "^16.0.5",
+    "vue-observe-visibility": "^1.0.0",
+    "vue3-persian-datetime-picker": "^1.2.2"
   }
 }
