@@ -1,4 +1,5 @@
 <template>
+
     <div class="flex justify-between items-center px-8 py-4">
         <div class="lg:w-1/6 w-2/6">
             <div class=" flex items-center">
@@ -32,25 +33,22 @@
             <ToolsLoginDate />
         </div>
     </div>
-    <div @click="modal = true" class="py-2 px-3 rounded-lg bg-green-600 hover:bg-green-700 absolute bottom-10 right-8 opacity-70 hover:opacity-100 shadow cursor-pointer">
+    <div @click="showModal = true"
+        class="py-2 px-3 rounded-lg bg-green-600 hover:bg-green-700 absolute bottom-10 right-8 opacity-70 hover:opacity-100 shadow cursor-pointer">
         <i class="fa-solid fa-plus text-base mt-1"></i>
     </div>
-    <div v-if="modal" class="absolute top-0 left-0 w-full h-full flex justify-center items-center" id="modal">
-        <div @click="modal = false" class="w-full absolute h-full bg-black opacity-5 z-30"></div>
-        <div class="rounded-lg bg-gray-800  w-2/4 h-48 rounded-lg z-40">
-            <div id="modal-header" class="p-3 pb-1 bg-gray-900">
-h
-            </div>
-            <div id="modal-body" class="p-2">
-b
-            </div>
-        </div>
-    </div>
+
+    <GsapModal v-model="showModal">
+        <h2>سلام!</h2>
+        <p>این یک مودال با انیمیشن GSAP هست.</p>
+    </GsapModal>
 </template>
 
 <script setup>
-const modal = ref(null);
+const showModal = ref(false)
+
 </script>
+
 <style>
 .bg-info-500 {
     background-color: #00a6f4;
