@@ -18,10 +18,12 @@
   },
   "dependencies": {
     "@vueuse/core": "^12.4.0",
+    "axios": "^1.8.4",
     "gsap": "^3.12.5",
     "jalaali-js": "^1.2.8",
     "sass": "^1.86.3",
     "sass-loader": "^16.0.5",
+    "sweetalert2": "^11.19.1",
     "vue-observe-visibility": "^1.0.0",
     "vue3-persian-datetime-picker": "^1.2.2"
   }

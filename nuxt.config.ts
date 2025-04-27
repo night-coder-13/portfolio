@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
-      BaseUrl: "http://localhost:3000",
+      BaseUrl: "http://localhost:8000/api",
       // BaseUrl: "https://laravel-app.liara.run",
     },
   },
@@ -23,7 +23,7 @@ export default defineNuxtConfig({
   colorMode: {
     preference: "light",
   },
-  plugins: ['~/plugins/vue-persian-datepicker.client.js'],
+  plugins: ['~/plugins/vue-persian-datepicker.client.js' , '~/plugins/axios.js'],
   css:['~/assets/css/min.css','~/assets/fontawesome/css/all.min.css','~/assets/css/datepicker.css'],
   compatibilityDate: "2025-01-13"
 });
