@@ -39,8 +39,7 @@
     </div>
 
     <GsapModal v-model="showModal">
-        <h2>سلام!</h2>
-        <p>این یک مودال با انیمیشن GSAP هست.</p>
+        <SasAddWork />
     </GsapModal>
 </template>
 

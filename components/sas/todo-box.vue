@@ -63,7 +63,6 @@ onMounted(() => {
     // اطمینان از این که DOM کامل شده است
     nextTick(() => {
         heights.value = paragraphsRef.value.map(el => el.offsetHeight + 25)
-        console.log(heights.value)
     })
 })
 </script>

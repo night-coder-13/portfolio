@@ -1,33 +1,43 @@
-<template>
-  <!-- <div class="w-1/4 m-auto">
-    <Datepicker v-model="selectedDate" format="jYYYY-jMM-jDD" />
-    <Datepicker :modal="true" type="time" />
-    <Datepicker color="green" :auto-submit="false" />
-    <ShamsiCalendar :year="shamsiYear" :month="shamsiMonth" :day="shamsiDay" />
-  </div> -->
-  <UModal
-    title="Modal with description"
-    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-  >
-    <UButton label="Open" color="green" variant="subtle" />
-
-    <template #body>
-      <Placeholder class="h-48" />
-    </template>
-  </UModal>
-
-</template>
-
 <script setup>
-import { ref } from 'vue'
-const selectedDate = ref(null)
+import { ref } from 'vue';
+import axios from 'axios';
 
-import jalaali from 'jalaali-js'
 
-const today = new Date()
-const { jy, jm, jd } = jalaali.toJalaali(today.getFullYear(), today.getMonth() + 1, today.getDate())
-const shamsiYear = ref(jy)
-const shamsiMonth = ref(jm)
-const shamsiDay = ref(jd)
+const users = ref([]);
+const error = ref(null);
 
+const fetchUsers = async () => {
+  try {
+    const response = await axios.post('http://localhost:8000/api/works',
+      {
+        title: "test",
+        text: "test text",
+      },
+      {
+        headers: {
+          'Authorization': 'Bearer 1|gGFnwfbFqGPzlSSBFuXIPbEpdZNTNrSt9bBE14kAae01a2d6',
+          'Content-Type': 'application/json',
+        }
+      }
+    );
+    users.value = response.data;
+  } catch (err) {
+    error.value = err.message;
+  }
+};
+
+// فراخوانی تابع هنگام بارگذاری کامپوننت
+onMounted(() => {
+  fetchUsers();
+});
 </script>
+
+<template>
+  <div class="p-8">
+    <h1>کاربران</h1>
+    <div v-if="error">{{ error }}</div>
+    <ul>
+      <li v-for="user in users" :key="user.id">{{ user.title }}</li>
+    </ul>
+  </div>
+</template>

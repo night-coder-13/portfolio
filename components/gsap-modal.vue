@@ -1,9 +1,9 @@
 <template>
     <div v-if="isOpen" class="modal-backdrop" @click.self="close">
-        <div ref="modalBox" class="rounded-lg bg-gray-800  w-2/4 h-48 rounded-lg z-40 overflow-hidden">
+        <div ref="modalBox" class="rounded-lg bg-gray-800  w-2/4 rounded-lg z-40 overflow-hidden">
             <div id="modal-header" class="p-3 pb-1 bg-gray-600">
                 <div class="flex justify-between">
-                    <h3 class="mr-4">افزودن آیتم</h3>
+                    <h3 class="mr-4">افزودن کار</h3>
                     <span @click="close" class="px-2 py-1 cursor-pointer rounded-md hover:bg-green-700"><i
                             class="fa-solid fa-close"></i></span>
                 </div>
