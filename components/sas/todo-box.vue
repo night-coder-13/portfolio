@@ -3,14 +3,15 @@
         <div class="relative">
             <span class="text-center -mr-2 text-lg">
                 <i v-if="todo.status == 0" class="fa-solid fa-ban text-red-400"></i>
-                <i v-if="todo.status == 1" class="fa-solid fa-check-double text-green-400"></i>
-                <i v-if="todo.status == 2" class="fa-solid fa-check text-blue-400"></i>
+                <i v-if="todo.status == 2" class="fa-solid fa-check-double text-green-400"></i>
+                <i v-if="todo.status == 1" class="fa-solid fa-check text-blue-400"></i>
             </span>
             <ClientOnly>
                 <Cane :height="heights[i] > 50 ? heights[i] : 60" />
             </ClientOnly>
             <div class="absolute flex right-9 -bottom-2 gap-2">
-                <NuxtLink v-if="todo.status != 1 && todo.status != 0" class="text-xs w-24 btn--success">
+                <NuxtLink @click.prevent="Update(todo.id, 2)" v-if="todo.status == 1 && todo.status != 0"
+                    class="text-xs w-24 btn--success">
                     <i class="fa-solid fa-check-double ml-1"></i>
                     <span>تکمیل شده</span>
                 </NuxtLink>
@@ -18,7 +19,7 @@
                     <i class="fa-solid fa-paper-plane ml-1"></i>
                     <span>ارسال نظر</span>
                 </NuxtLink>
-                <NuxtLink v-if="todo.status != 0" class="text-xs w-16 btn--error">
+                <NuxtLink @click.prevent="Update(todo.id, 0)" v-if="todo.status != 0" class="text-xs w-16 btn--error">
                     <i class="fa-solid fa-ban ml-1"></i>
                     <span>لغو</span>
                 </NuxtLink>
@@ -52,6 +53,8 @@
 
 <script setup>
 import { ref, onMounted, nextTick } from 'vue'
+import axios from 'axios';
+import Swal from 'sweetalert2';
 const props = defineProps({
     todos: { type: Array, default: [] }
 })
@@ -65,4 +68,53 @@ onMounted(() => {
         heights.value = paragraphsRef.value.map(el => el.offsetHeight + 25)
     })
 })
+
+
+const { $log } = useNuxtApp();
+
+const { public: { BaseUrl } } = useRuntimeConfig();
+const loader = useState('Loader')
+
+const Update = async (id, value) => {
+    loader.value = false
+    try {
+        let token = useCookie('token');
+        const response = await axios.put(`${BaseUrl}/works/${id}`,
+            {
+                status: value,
+            },
+            {
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer ' + token.value
+                }
+            }
+        );
+        loader.value = true
+        Swal.fire({
+            title: 'عملیات موفق',
+            icon: 'success',
+            confirmButtonText: 'حله',
+            confirmButtonColor: '#09925f',  // سبز
+        })
+    } catch (err) {
+        if (err.response.data['message']) {
+            let text = err.response.data['message']
+            Swal.fire({
+                title: "لطفا در وارد نمودن اطلاعات خود دقت فرمایید .",
+                text: text,
+                icon: "info",
+                confirmButtonText: `
+                    <i class="fa fa-thumbs-up"></i> حله!
+                `,
+            });
+        }
+
+        console.log(err.response)
+        loader.value = true
+        // $log( err.response.data , 0) ;
+    } finally{
+        loader.value = true
+    }
+};
 </script>

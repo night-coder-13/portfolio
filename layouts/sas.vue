@@ -34,7 +34,7 @@
         </div>
     </div>
     <div @click="showModal = true"
-        class="py-2 px-3 rounded-lg bg-green-600 hover:bg-green-700 absolute bottom-10 right-8 opacity-70 hover:opacity-100 shadow cursor-pointer">
+        class="py-2 px-3 rounded-lg bg-green-600 hover:bg-green-700 fixed bottom-10 right-8 opacity-70 hover:opacity-100 shadow cursor-pointer">
         <i class="fa-solid fa-plus text-base mt-1"></i>
     </div>
 

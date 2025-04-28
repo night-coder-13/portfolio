@@ -9,7 +9,7 @@
 
 <script setup>
 
-const loader = ref(false)
+const loader = useState('Loader', () => false)
 onNuxtReady(async () => {
   loader.value = true
 })
